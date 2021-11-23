@@ -11,8 +11,7 @@ on:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
-  schedule:
-    - cron: '0/5 * * * *'
+  worflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -35,3 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: List current directory contents
+        run: ls -la
