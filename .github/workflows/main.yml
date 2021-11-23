@@ -42,5 +42,6 @@ jobs:
         run: bash ./script.sh
         
       - name: final task from Hint
-        run: rm file2.txt
-             ls -la
+        run: |
+          rm file2.txt
+          ls -la
